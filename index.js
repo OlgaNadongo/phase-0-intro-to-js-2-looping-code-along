@@ -5,13 +5,14 @@ function writeCards (cards) {
         newArray.push (`Thank you, ${cards[i]}, for the wonderful surprise gift!`); 
        
     }
-    
+    return writeCards(cards)
 }
 
 function CountDown(integer){
-  while (integer >= 0) {
+  while (integer > 0) {
     console.log(integer);
-   integer--;
+   integer-=1;
   }
+  console.log(integer)
 }
-CountDown(3);
+
